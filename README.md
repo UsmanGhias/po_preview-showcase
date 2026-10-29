@@ -1,56 +1,31 @@
-# po_preview Usman Ghias
+# Purchase Order Portal Preview
 
-Metadata repository for the private repo: po_preview. Purchase Order Preview
+![Odoo](https://img.shields.io/badge/Odoo-17.0-714B67) ![Editions](https://img.shields.io/badge/Editions-Community%2C_Enterprise-2563EB) ![License](https://img.shields.io/badge/License-OPL--1-0F766E)
 
-> Portfolio showcase for a private/proprietary implementation. The production source is **not** included in this repository.
+Sale orders have a Preview button that opens the customer portal view. Purchase orders do not. This app adds the same button, so buyers see exactly what the vendor will see before sending.
 
-## Overview
+## What it does
 
-`po_preview` is documented here as a professional case study. This repository contains portfolio metadata and high-level documentation only.
+- Preview button on the purchase order form that opens the vendor portal page
 
-## Problem solved
+## How to use it
 
-Metadata repository for the private repo: po_preview. Purchase Order Preview
+1. Open a purchase order and click Preview.
 
-## Key capabilities
+## Technical notes
 
-- Business-process customization aligned to operational needs
-- Integration with standard Odoo apps where applicable
-- Practical UI and workflow improvements for end users
+Technical name `purchase_order_preview`, Odoo 17.0.
 
-## Technology and Odoo version
+Adds an `act_url` action on `purchase.order` built from `get_portal_url()`. Depends on `purchase` and `portal`.
 
-- Stack: Odoo, Python, ERP customization
-- Repository type: portfolio case study / documentation
-- Related module/project name: `po_preview`
+## Get the module
 
-## My contribution
+This module is not on the Odoo App Store yet. Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=purchase_order_preview) for a licence, the full source code and installation on your database.
 
-Architecture, development, customization, integration, testing, and delivery support for the underlying implementation (as applicable to this project).
-
-## Architecture at a high level
-
-Standard Odoo/ERP extension patterns: module metadata, business models, views/actions, and workflow customization layered on core Odoo apps. Exact proprietary implementation details are intentionally omitted.
-
-## Screenshots or demo
-
-Screenshots are available on request. Any shared visuals must be anonymized and used only with permission.
-
-## Source availability
-
-The production implementation lives in a private repository because it contains proprietary and/or client-specific work, configuration, or assets.
-
-This repository must not be treated as an open-source release of the production codebase.
-
-## License and attribution
-
-Documentation in this showcase repository is provided for portfolio demonstration. Third-party trademarks and product names remain the property of their owners. This README does **not** relicense any private source code.
-
-## Contact
-
-- GitHub: https://github.com/UsmanGhias
-- Profile / portfolio repositories under the same account
+Need it on another Odoo version, with changes for your workflow, or installed and tested on Odoo.sh? Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=purchase_order_preview%20customisation) or see [CODCrafters](https://codcrafters.org).
 
 ---
 
-Status: Portfolio showcase (documentation only)
+This repository is the product page. The module source is private and comes with the licence.
+
+Built by [Usman Ghias](https://usmanghias.co.uk), [CODCrafters](https://codcrafters.org).
